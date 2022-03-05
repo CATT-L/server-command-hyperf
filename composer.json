@@ -21,6 +21,7 @@
     },
     "require": {
         "php": ">=7.3",
+        "hyperf/database": "^2.2",
         "hyperf/di": "2.2.*",
         "hyperf/event": "^2.2",
         "hyperf/framework": "2.2.*",

@@ -13,6 +13,7 @@ declare(strict_types=1);
 namespace Catt\ServerCommand;
 
 
+use Catt\ServerCommand\Command\ServerDeployCommand;
 use Catt\ServerCommand\Command\ServerRestartCommand;
 use Catt\ServerCommand\Command\ServerStartCommand;
 use Catt\ServerCommand\Command\ServerStopCommand;
@@ -25,6 +26,7 @@ class ConfigProvider {
                 ServerStartCommand::class,
                 ServerStopCommand::class,
                 ServerRestartCommand::class,
+                ServerDeployCommand::class,
             ],
             'listeners'    => [],
             'annotations'  => [
