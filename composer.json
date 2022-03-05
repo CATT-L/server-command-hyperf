@@ -1,0 +1,48 @@
+{
+    "name": "catt-l/server-command-hyperf",
+    "type": "library",
+    "license": "Apache-2.0",
+    "keywords": [
+        "php",
+        "hyperf",
+        "server",
+        "command"
+    ],
+    "description": "Add server command to hyperf.",
+    "autoload": {
+        "psr-4": {
+            "Catt\\ServerCommand\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.3",
+        "hyperf/di": "2.2.*",
+        "hyperf/event": "^2.2",
+        "hyperf/framework": "2.2.*",
+        "hyperf/http-server": "^2.2"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": ">=7.0",
+        "swoole/ide-helper": "dev-master",
+        "symfony/var-dumper": "^5.1"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit -c phpunit.xml --colors=always",
+        "cs-fix": "php-cs-fixer fix $1"
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Catt\\ServerCommand\\ConfigProvider"
+        }
+    }
+}
